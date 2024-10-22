@@ -1,0 +1,7 @@
+print("hello python")
+print("Nanticha wongyong")
+print("ice")
+print("19")
+print("9")
+print("67319010030")
+print("art")
