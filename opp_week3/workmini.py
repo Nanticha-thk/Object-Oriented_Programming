@@ -6,7 +6,3 @@ while True :
     if num == 0:
         print(f'ผลรวมทั้งหมด {a}')
         break
-
-
-
-
