@@ -71,4 +71,4 @@ print(clothes1.showinfo())
 notebook1.add(6)  # เพิ่ม
 notebook1.remove(10)  # ลด
 notebook1.update(36000)  # แก้ไข
-notebook1.show_product_info() 
+notebook1.show_product_info()
