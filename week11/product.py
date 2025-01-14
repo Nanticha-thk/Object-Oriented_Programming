@@ -21,7 +21,7 @@ class Product:
             print(f"- ปรับราคา {self.name} เป็น {self.__price} บาทสำเร็จ")
         else:
             print("ราคาต้องมากกว่า 0 บาท")
-    
+
     def showstock(self):  # ตรวจสอบ
         print(self.__stock)
         return self.__stock
