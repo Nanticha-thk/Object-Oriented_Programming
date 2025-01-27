@@ -1,21 +1,22 @@
 import requests
 
-api_key = 'live_d0WelkY66D47ElpScfa473ODAkB4X6iYb4svJM3ZtfcAvWDYz0UU5TQ8m7tQq4Wx'
+api_key = 'your_cat_api_key'
+cat = 'Abyssinian'
+url = f'https://api.thecatapi.com/v1/breeds/search?q={cat}'
 
-Cat = input('ใส่ชื่อสายพันธุ์แมว : ')
-url = f''
-url_json = ''
+headers = {'x-api-key': api_key}
 
-result = requests.get(url).json()
+result = requests.get(url, headers=headers).json()
 
-name = result[0]['name']
-description = result[0]['description']
-origin = result[0]['origin']
-temperament = result[0]['temperament']
-life_span = result[0]['life_span']
-intelligence = result[0]('intelligence')  
-grooming = result[0]('grooming') 
-affection_level = result[0]('affection_level') 
+breed = result[0] 
+name = breed['name']
+description = breed['description']
+origin = breed['origin']
+temperament = breed['temperament']
+life_span = breed['life_span']
+intelligence = breed['intelligence']
+grooming = breed['grooming']
+affection_level = breed['affection_level']
 
 print(f"ข้อมูลสายพันธุ์แมว: {name}")
 print(f"คำอธิบาย: {description}")
@@ -24,4 +25,4 @@ print(f"อารมณ์: {temperament}")
 print(f"อายุเฉลี่ย: {life_span} ปี")
 print(f"ระดับความฉลาด: {intelligence}")
 print(f"ระดับความพยายามในการเลี้ยงดู: {grooming}")
-print(f"ระดับการรักใคร: {affection_level}")     
+print(f"ระดับการรักใคร: {affection_level}")
